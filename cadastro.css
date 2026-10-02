@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #111111, #292929);
+
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* TÍTULO */
+
+h1 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    color: white;
+
+    font-size: 32px;
+}
+
+
+h1 span {
+    color: #F97316;
+}
+
+
+/* ÁREA DO CADASTRO */
+
+#cadastroArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 25px 20px 50px;
+}
+
+
+/* CONTAINER */
+
+#container {
+    width: 600px;
+    max-width: 100%;
+
+    padding: 35px 40px;
+
+    background: #f8fafc;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* TÍTULO DO CARD */
+
+#container h2 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 24px;
+}
+
+
+#subtitulo {
+    margin-top: 7px;
+    margin-bottom: 28px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* LINHA COM DOIS CAMPOS */
+
+.linha {
+    display: flex;
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+.campo label {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.campo input {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: white;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.campo input:focus {
+    border-color: #F97316;
+
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+
+.campo input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* BOTÃO CADASTRAR */
+
+#btnCadastrar {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #F97316;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#btnCadastrar:hover {
+    background: #EA580C;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 15px rgba(234, 88, 12, 0.25);
+}
+
+
+/* BOTÃO VOLTAR */
+
+#btnVoltar {
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 10px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#btnVoltar:hover {
+    border-color: #F97316;
+
+    color: #F97316;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+    #container {
+        padding: 30px 25px;
+    }
+
+    .linha {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}

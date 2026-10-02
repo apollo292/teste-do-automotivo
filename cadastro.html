@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFix - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <h1>Cadastro *AutoFix*</h1>
+    <div id="cadastroArea">
+        <div id="container">
+            <h2>Criar conta</h2>
+            <p id="subtítulo">Preencha seus dados para cadastrar um cliente</p>
+            <div class="linha">
+                <div class="campo">
+                    <label for="inputNome">Nome:</label>
+                    <input type="text" id="inputNome" placeholder="Ex: Nome">
+                </div>
+                <div class="campo">
+                    <label for="inputSobrenome">Sobrenome:</label>
+                    <input type="text" id="inputSobrenome" placeholder="Ex: Sobrenome">
+                </div>
+            </div>
+            <div class="campo">
+                <label for="inputEmail">E-mail:</label>
+                <input type="email" id="inputEmail" placeholder="Ex: nome123@email.com">
+            </div>
+            <div class="linha">
+                <div class="campo">
+                    <label for="inputTelefone">Telefone:</label>
+                    <input type="tel" id="inputTelefone" placeholder="(00) 00000-0000">
+                </div>
+                <div class="campo">
+                    <label for="inputCpf">CPF:</label>
+                    <input type="text" id="inputCpf" placeholder="000.000.000-00">
+                </div>
+            </div>
+            <div class="campo">
+                <label for="inputSenha">Senha:</label>
+                <input
+                    type="password"
+                    id="inputSenha"
+                    placeholder="Ex: 12345678"
+                >
+            </div>
+            <div class="campo">
+                <label for="inputConfirmarSenha">
+                    Confirmar senha:
+                </label>
+                <input
+                    type="password"
+                    id="inputConfirmarSenha"
+                    placeholder="Ex: 12345678"
+                >
+            </div>
+            <button id="btnCadastrar">Cadastrar</button>
+            <button id="btnVoltar">Voltar para o login</button>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>

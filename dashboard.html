@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoFix - Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside id="sidebar">
+
+        <div id="logo">
+            <h2>Auto<span>Fix</span></h2>
+            <p>Oficina Mecânica</p>
+        </div>
+
+        <nav>
+
+            <a href="#" class="menuAtivo">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span>👤</span>
+                Clientes
+            </a>
+
+            <a href="#">
+                <span>🚗</span>
+                Veículos
+            </a>
+
+            <a href="#">
+                <span>🔧</span>
+                Ordens de Serviço
+            </a>
+
+            <a href="#">
+                <span>📦</span>
+                Estoque
+            </a>
+
+            <a href="#">
+                <span>💰</span>
+                Financeiro
+            </a>
+
+        </nav>
+
+        <div id="rodapeMenu">
+            <button id="btnSair">
+                ↩ Sair
+            </button>
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo">
+
+        <!-- CABEÇALHO -->
+        <header>
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Visão geral da sua oficina</p>
+            </div>
+
+            <div id="usuario">
+                <div id="avatar">
+                    A
+                </div>
+
+                <div>
+                    <strong>Administrador</strong>
+                    <small>Usuário</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- CARDS -->
+        <section id="cards">
+
+            <div class="card">
+
+                <div class="icone laranja">
+                    🔧
+                </div>
+
+                <div>
+                    <p>Serviços em andamento</p>
+                    <h2>08</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone azul">
+                    🚗
+                </div>
+
+                <div>
+                    <p>Veículos cadastrados</p>
+                    <h2>124</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone verde">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Serviços concluídos</p>
+                    <h2>32</h2>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone amarelo">
+                    💰
+                </div>
+
+                <div>
+                    <p>Faturamento do mês</p>
+                    <h2>R$ 12.450</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA INFERIOR -->
+        <section id="areaInferior">
+
+            <!-- SERVIÇOS -->
+            <div id="servicos">
+
+                <div class="tituloSecao">
+                    <div>
+                        <h2>Ordens de serviço recentes</h2>
+                        <p>Últimos serviços registrados</p>
+                    </div>
+
+                    <button class="btnLaranja">
+                        + Novo serviço
+                    </button>
+                </div>
+
+
+                <div id="tabelaContainer">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Veículo</th>
+                                <th>Serviço</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>João Silva</td>
+                                <td>Honda Civic</td>
+                                <td>Troca de óleo</td>
+                                <td>
+                                    <span class="status andamento">
+                                        Em andamento
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Maria Souza</td>
+                                <td>Fiat Argo</td>
+                                <td>Alinhamento</td>
+                                <td>
+                                    <span class="status concluido">
+                                        Concluído
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Carlos Santos</td>
+                                <td>Chevrolet Onix</td>
+                                <td>Freios</td>
+                                <td>
+                                    <span class="status aguardando">
+                                        Aguardando
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ana Oliveira</td>
+                                <td>VW Gol</td>
+                                <td>Suspensão</td>
+                                <td>
+                                    <span class="status andamento">
+                                        Em andamento
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- AÇÕES RÁPIDAS -->
+            <div id="acoes">
+
+                <h2>Ações rápidas</h2>
+                <p>Acesse rapidamente</p>
+
+
+                <button class="acao">
+                    <span>👤</span>
+                    <div>
+                        <strong>Novo cliente</strong>
+                        <small>Cadastrar cliente</small>
+                    </div>
+                    <b>›</b>
+                </button>
+
+
+                <button class="acao">
+                    <span>🚗</span>
+                    <div>
+                        <strong>Novo veículo</strong>
+                        <small>Cadastrar veículo</small>
+                    </div>
+                    <b>›</b>
+                </button>
+
+
+                <button class="acao">
+                    <span>🔧</span>
+                    <div>
+                        <strong>Nova ordem</strong>
+                        <small>Criar ordem de serviço</small>
+                    </div>
+                    <b>›</b>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
